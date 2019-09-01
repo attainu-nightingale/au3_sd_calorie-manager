@@ -5,96 +5,81 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<title>Calorify.Me!</title>
 </head>
-<style>
-       .jumbotron {
-            background-image: url("http://www.h2ofitnesscenter.it/wp-content/uploads/2015/10/run-outdoor-foto.jpg");
-               background-repeat:no-repeat;
-               background-size:cover;
-        } 
-        
-        </style>
 <body>
-    <div class="jumbotron">
-            <h1 class="display-4"><center><b><i>Calorify Me!</i></b></center></h1>
-            <hr class="my-4">
-            <p>....</p>
-    </div>
-
     <div class="row">
-        <div class="col-8">
-            <img src="https://drive.google.com/file/d/0B7AQUv2pAp9NNEQtMUNlejFsWWhNcVhORWpxWFNxZW9YcHZZ/view?usp=sharing">
+        <div class="col-6">
+            <img src="http://www.h2ofitnesscenter.it/wp-content/uploads/2015/10/run-outdoor-foto.jpg" height="740px" width="800px">
         </div>
-
-    <!---Login Box--->
-    
-    <div class="col-4">
-        <div class="card" style=" width: 25rem;">
+        <div class="card" style=" width: 45rem;">
             <div class="card-body">
                 <form>
-                    <div class="form-group row">
-                        <label for="username"></label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="username" placeholder="Username">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="password"></label>
-                        <div class="col-sm-10">
-                            <input type="password" class="form-control" id="password" placeholder="Password">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                    <div class="col-6" style="margin: auto">
+                        <div class="form-group row">
+                            <label for="username"></label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="username" placeholder="Username">
                             </div>
                         </div>
-                        <div class="col-6">
-                                <a href="#" class="card-link">Forgot password?</a>
+                        <div class="form-group row">
+                            <label for="password"></label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                title="Must at least 8 or more characters" required>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <center><button type="submit" class="btn btn-primary">Login</button></center>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                    <a href="#" class="card-link">Forgot password?</a>
+                            </div>
                         </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-12">
-                            <p><center>Or Login with</center></p>
+                        <div class="row">
+                            <div class="col-12">
+                                <center><button type="submit" class="btn btn-primary">Login</button></center>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <img id="logo" height="30px" width="30px"
-                                src="https://image.flaticon.com/icons/svg/124/124010.svg">
-                            <button type="submit" class="btn btn-primary" style="background-color: #18429b; width: 75%"><b>Facebook</b></button>
-                        </div>
+                        <hr>
+                        <div class="container" style="background-color: #E5EAFA">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p><center>Or Login with</center></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <img id="logo" height="30px" width="30px"
+                                        src="https://image.flaticon.com/icons/svg/124/124010.svg">
+                                    <button type="submit" class="btn btn-primary"  id="facebook" style="background-color: #18429b; width: 75%"><b>Facebook</b></button>
+                                </div>
 
-                    </div>
-                    <br />
-                    <div class="col-12">
-                        <img id="logo" height="30px" width="30px"
-                            src="https://logonoid.com/images/google-plus-logo.png">
-                        <button type="submit" class="btn btn-danger" style="background-color: #c3423f; width: 85%"><b>Google+</b></button>
-                    </div>
-                    <br />
-                    <div class="row">
-                        <div class="col-12">
-                            <p>Don't have an Account? Ragister now.</p>
+                            </div>
+                            <br />
+                            <div class="col-12">
+                                <img id="logo" height="30px" width="30px"
+                                    src="https://logonoid.com/images/google-plus-logo.png">
+                                <button type="submit" class="btn btn-danger" id="google" style="background-color: #c3423f; width: 85%"><b>Google+</b></button>
+                            </div>
+                            <br />
+                            <div class="row">
+                                <div class="col-12">
+                                    <p>Don't have an Account? Ragister now.</p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <center><button type="submit" class="btn btn-primary">Ragister</button></center>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-12">
-                            <center><button type="submit" class="btn btn-primary">Ragister</button></center>
-                    </div>
+                    </div>    
                 </form>
             </div>
         </div>
     </div>
-
 </body>
-</html>
