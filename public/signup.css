@@ -1,0 +1,79 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
+body {
+    background-image: url("https://images.unsplash.com/photo-1496412705862-e0088f16f791?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Times New Roman', Times, serif;
+  }
+img{
+  width: 377px;
+  height: 420px;
+
+}
+img:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+.col-md-8{
+  background: rgba(0,0,0,0.5);
+  box-shadow: -1px 1px 50px 10px black ;
+  padding: 10px;
+  margin-top: 300px;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-bottom: 300px;
+  width: 80%;
+}
+ul{
+   margin: 50 50 50 50;
+   padding-left:280px;
+ 
+}
+ul a{
+  font-size: 29px;
+  color: white;
+}
+ul a:hover{
+  text-decoration: none;
+}
+.label{
+  font-size: 20px;
+  color: white;
+  font-weight: normal; 
+}
+form-control{
+  background: transparent;
+  border-radius: 0px;
+  border: 0px;
+  border-bottom: 2px solid lightgreen;
+  margin-bottom: 30px;
+  font-size: 22px;
+  color: white;
+  padding: 20px; 
+}
+li{
+ 
+  padding-left:150px;
+}
+.custom-control{
+  font-size: 20px;
+  color: white;
+  font-weight: normal; 
+}
+p{
+  margin: 50 50 50 50;
+  padding-left:5px;
+  color: white;
+}
+ol{
+  margin: 50 50 50 50;
+
+  padding-right:100px;
+  color: white;
+}
+.btn btn-success{
+  padding-right:100px;
+}

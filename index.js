@@ -1,9 +1,12 @@
 var express = require("express");
 var app = express();
+
+app.use(express.static('public'));
+
 var bodyParser = require("body-parser");
 var session = require("express-session");
 var MongoClient = require("mongodb").MongoClient;
-var url = "mongodb://localhost:27017";
+var url = "mongodb+srv://vipul:vipul123@calorify-db-oonwj.mongodb.net/?retryWrites=true&w=majority";
 var db;
 var ObjectId = require("mongodb").ObjectID;
 
@@ -12,7 +15,7 @@ MongoClient.connect(
   { useNewUrlParser: true, useUnifiedTopology: true },
   function(error, client) {
     if (error) throw error;
-    db = client.db("users");
+    db = client.db("blog");
   }
 );
 
@@ -26,11 +29,21 @@ app.use(
 
 app.set("view engine", "hbs");
 
-app.use(express.static("public"));
 
 app.use(bodyParser.urlencoded({ extended: true }));
-
 app.get("/", function(req, res) {
-  res.send("welcome to calorify.me");
+
+  res.sendfile( __dirname + '/public/login.html');
 });
-app.listen(3000);
+
+app.get("/signup", function(req, res) {
+
+  res.sendfile( __dirname + '/public/signup.html');
+});
+
+app.post("/signup", function(req, res) {
+  db.collection("users").insertOne(req.body);
+  console.log("inserted");
+  res.redirect('/');
+});
+app.listen(3001);

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+        <link rel="stylesheet" type="text/css" href="signup.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+      
+   <div class="container">
+     <form  action="/signup" onsubmit="return validateForm()"  method="POST">
+                   <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-6">
+                      <ul>
+                         
+                            <a href="/signup"     style="border-bottom: 2px solid lightgreen;padding: 10px;"> SignUp </a>
+                             </ul>
+                             
+                            <label class="label control-label">First Name</label>
+                            <input type="text" class="form-control" name="user" placeholder="First Name">
+                            <label class="label control-label">E-mail</label>
+                            <input type="email" class="form-control" name="email" placeholder="Email">
+                            <p>Please select your gender:
+                              <br/>
+                                <input type="radio" name="gender" value="male"> Male<br>  
+                                <input type="radio" name="gender" value="female"> Female<br>
+                              </p>
+                              
+                              <label class="label control-label">Date of Birth</label>
+                               <input type="date" class="form-control" name="bday">
+                              <br />
+                               <ul>
+                                <button type="submit" class="btn btn-success">Submit</button>
+                                </ul>
+                          </div>
+                          <br />
+                        <div class="col-md-6">
+                          <br/>
+                          <br/>
+                            <label class="label control-label">Last Name</label>
+                            <input type="text" class="form-control" name="user" placeholder="Last Name">
+                            <label class="label control-label">Password</label>
+                            <input type="password" class="form-control" name="password" placeholder="Password" minlength="8">
+                            <label class="label control-label">Current Weight</label>
+                            <input type="number" id="weight_value_display_value" class="form-control" placeholder="Weight(kgs)" data-unit-system="kg">
+                            <label class="label control-label inline">Current Height</label>
+                            <input type="number" id="weight_value_display_value" class="form-control" placeholder="Height(cms)" data-unit-system="cm">
+                            
+                        
+                        </div>   
+                    </div>
+                    <div  class="col-md-2"></div>
+                    </div>
+                  </form>
+                    </div>
+                    <script
+                    src="https://code.jquery.com/jquery-3.4.1.min.js"
+                    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+                    crossorigin="anonymous"></script>
+                    <script src="signup.js"></script>
+                  
+            </body>
+</html>
