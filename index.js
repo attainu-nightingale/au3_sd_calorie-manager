@@ -32,7 +32,9 @@ app.set("view engine", "hbs");
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.get("/", function(req, res) {
-
+  if (req.session.loggedIn)
+  res.redirect('/public/login.html');//page after user is loggedin remove the login.html and put the main page html. 
+else
   res.sendfile( __dirname + '/public/login.html');
 });
 
