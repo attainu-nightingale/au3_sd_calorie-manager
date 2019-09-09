@@ -33,14 +33,14 @@ app.set("view engine", "hbs");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.get("/", function(req, res) {
   if (req.session.loggedIn)
-  res.redirect('/public/login.html');//page after user is loggedin remove the login.html and put the main page html. 
+  res.render('login.hbs');//page after user is loggedin remove the login.html and put the main page html. 
 else
-  res.sendfile( __dirname + '/public/login.html');
+  res.render('login.hbs');
 });
 
 app.get("/signup", function(req, res) {
 
-  res.sendfile( __dirname + '/public/signup.html');
+  res.render('signup.hbs');
 });
 
 app.post("/signup", function(req, res) {
@@ -48,4 +48,4 @@ app.post("/signup", function(req, res) {
   console.log("inserted");
   res.redirect('/');
 });
-app.listen(3001);
+app.listen(3000);
