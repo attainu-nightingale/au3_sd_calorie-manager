@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>{{title}}</title>
+    {{!-- title icon --}}
+    <link rel = "icon" type = "image/png" href = "https://files.slack.com/files-pri/TKXCYPJET-FMU4SPWMS/organic-food-logo-613ef00a48-seeklogo.com.png">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    {{!-- bootstrap cdn and external css files --}}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/layout.css">
+    <link rel='stylesheet' type='text/css' media='screen' href={{style}}>
+</head>
+<body class="bg-light">
+{{!-- Header start --}}
+    <nav class="navbar navbar-light bg-dark  sticky-top">
+      {{!-- brand icon --}}
+  <a class="navbar-brand" id="brand" href="/home">
+    <img src="https://files.slack.com/files-pri/TKXCYPJET-FMU4SPWMS/organic-food-logo-613ef00a48-seeklogo.com.png" width="70" height="70"class="d-inline-block align-bottom " alt="">
+   <b class="logo"> Calorify.Me!</b>
+  </a>
+  {{!-- menu items --}}
+  <nav class="nav ">
+  <a class="nav-link links " href="/home"><i class="icon ion-ios-home"></i> Home</a>
+  <a class="nav-link links " href="/foods"><i class="icon ion-ios-nutrition"></i> Food</a>
+  <a class="nav-link links" href="/exercise"><i class="icon ion-ios-bicycle"></i> Exercise Chart</a>
+  <a class="nav-link links " href="/myProfile"><i class="icon ion-ios-settings"></i> My Profile</a>
+  <a class="nav-link links" href="/logout">Logout</a>
+</nav>
+</nav>
+{{!-- Header End --}}
+    {{{body}}}
+{{!-- Footer start --}}
+<footer class="page-footer font-small mdb-color darken-3 pt-4 bg-dark">
+  <div class="container">
+    <div class="row ">
+      <div class="col-3 text-secondary"><h6>About Us</h6> <hr>
+            Developers: <ul><li><a href="http://www.linkedin.com/in/sudhirkr23">Sudhir Kumar</a></li><li><a href="http://www.linkedin.com/in/sankalp-ambulkar-105301b0">Sankalp Ambulkar</a></li><li>Bhakti Tandel</li><li><a href="http://www.linkedin.com/in/vipul-babhare-1b09a6135">Vipul Babhare</a></li></ul>
+      Mentorship: <ul> <li><a href="http://www.linkedin.com/in/luben-gonsalves">Luben Frank Gonsalves</a> </li></ul>
+      </div>
+      <div class="col-6">
+        <div class="embed-responsive embed-responsive-16by9 mb-4">
+          <iframe style="border-radius: 20px" class="embed-responsive-item" src="https://www.youtube.com/embed/1LWuG1lOXJs"
+            allowfullscreen></iframe>
+        </div>      </div>
+
+        <div class="col-3 text-secondary"><h6>Contact Us</h6><hr>
+        <a href="mailto:sudhir.kr23.1995@gmail.com?Subject=Hello%20again" target="_top">
+        <img src="https://img.icons8.com/ios-filled/64/000000/filled-message.png"></a>
+        </div>
+    </div>
+  </div>
+  <div class="footer-copyright text-center text-secondary py-3">&copy; 2019 Copyright:
+    <a href="/home"> Calorify.Me!</a>
+  </div>
+</footer>
+{{!-- Footer end --}}
+    {{!-- script files --}}
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+       <script src={{script}}></script>
+
+</body>
+</html>

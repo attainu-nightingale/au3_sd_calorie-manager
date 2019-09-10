@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{title}}</title>
+    <link rel = "icon" type = "image/png" href = "https://files.slack.com/files-pri/TKXCYPJET-FMU4SPWMS/organic-food-logo-613ef00a48-seeklogo.com.png">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container-fluid aa " >
+    <div class="container ">
+        <div class="row">
+​
+            <!-- Column 1-->
+            <div class="col-7">
+                <div class="container" style="height: 250px;">
+                    <!---  -->
+                </div>
+                <div class="container-b">
+                    <div class="row">
+                        <div class="col-1">
+                            <!-- -->
+                        </div>
+                        <div class="col-9 text-light rounded">
+                            <p>Calories are a measure of energy and are commonly used to describe the energy content of foods.
+                                    Your body is able to break down food molecules and use the stored energy for many different functions, including movement, thought and growth.
+                                    Calories also play a role in weight control, because eating more calories than your body needs can lead to weight gain.
+                            </p>
+                            <b><i class="float-right">-Blake Hagen</i></b>
+                        </div>
+                        <div class="col-1">
+                            <!---  -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Column 2-->
+            <div class="col-5">
+                <div class="row" style="display: none">
+                    <div class="col-2">
+                        <!---  -->
+                    </div>
+                    <div class="col-4 " >
+                    </div>
+                    <div class="col-2">
+                        <!---  -->
+                    </div>
+                </div>
+                <br><br><br>
+                <div class="transbox"><br>
+                <form  action="/auth" method="POST" class="p-3">
+                    <div class="row">
+                        <div class="col-2">
+​
+                        </div>
+                        <div class="col-7 text-center">
+                                <img src="https://files.slack.com/files-pri/TKXCYPJET-FMU4SPWMS/organic-food-logo-613ef00a48-seeklogo.com.png" width="70" height="70"class="d-inline-block align-bottom " alt="">
+   <b class="logo"> Calorify.Me!</b>
+
+                            {{!-- <h2>Calorify Me!</h2> --}}
+                        </div>
+                      
+                    </div>
+                    <br />
+                    <br />
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" maxlength="8" id="password" placeholder="Password" name="password" required>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-1">
+                                    <!--  -->
+                                </div>
+                                <div class="col-4.5 text-white">
+                                    <input type="checkbox" class="form-check-input" id="checkbox">
+                                    <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#" class="card-link">Forgot password?</a>
+                                </div>
+                            </div>
+                        </div>        
+                        <br />
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-lg btns" onclick="alt()">Login</button>
+                        </div>
+                        <hr>
+                        {{!-- <div class="text-center text-white">
+                            <p>Or Login With</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <!-- <button type="submit" class="btn btn-primary" style="background-color: #18429b; width: 100%"><b>Facebook</b></button> -->
+                            </div>
+                            <br />
+                            <br />
+                            <div class="col-12">
+                                <!-- <button type="submit" class="btn btn-danger" style="background-color: #c3423f; width: 100%"><b>Google+</b></button> -->
+                            </div> --}}
+                        {{!-- </div> --}}
+                        <div class="row">
+                            <div class="col-12 text-white">
+                                <p class="text-center">Don't have an Account? Register now.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                      <a href="/signup" class="text-warning reg">Register</button></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div></div>            <br><br>
+</div>
+       <script>function alt(){
+          var input=document.querySelector(".form-control");
+          if(input.value.length==0) alert("Empty input fields");
+          else
+          console.log("Logged in Successfully");
+        }</script>
+ 
+</body>
+</html>

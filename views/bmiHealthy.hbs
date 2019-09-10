@@ -1,0 +1,98 @@
+<div class="body">
+<div class="container "> 
+    <div class="row">
+        <div class="col-6  rounded  cal">
+            <img class="rounded-circle ml-4 profile-pic" src="https://pickaface.net/gallery/avatar/28944528_180710_0122_8zrjz4.png" width="125px" height="125px">
+            <div class="userName">{{data.fname}}&nbsp;{{data.lname}}</div>
+            <div class="card text-dark  mb-3 " style="max-width: 18rem;">
+               <div class="card-header font-weight-bold h5"><i class="icon ion-ios-clipboard"></i>&nbsp;Report Card</div>
+               <div class="card-body">
+                  <p class="card-text">
+                          <li>Date of Birth:&nbsp;{{data.dob}}</li>
+                          <li>Weight:&nbsp;{{data.weight}}&nbsp;kg</li>
+                          <li>Height:&nbsp;{{data.height}}&nbsp;m</li>
+                      </p>
+               </div>
+            </div>
+            <div class="card-footer rounded font-weight-bold border-success h4">Body Mass Index:&nbsp;{{data.bmiValue}}</div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="container-fluid" id="healthy">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 md-5 p-3">
+                <div><b>Hooray! You are Healthy</b><hr style="background-color: rgb(152, 21, 55);"></div>
+                <p>Your BMI indicates that you are at a healthy weight for your height. By maintaining a healthy weight, you lower your risk of developing serious health problems.</p>
+                <div class="container"  >
+                   <p class="text-center"> <b >Macros to Calories calculator</b></p>
+                    <form class="calories" >
+                        <div class="form-group">
+                         <label for="proteins">Protein (gm)</label>
+                         <input type="number" class="form-control form-control-sm" id="proteins" placeholder="Protein in gm" required>
+                        </div>
+                        <div class="form-group">
+                         <label for="carbs">Carbs (gm)</label>
+                         <input type="number" class="form-control form-control-sm" id="carbs" placeholder="Carbs in gm" required>
+                        </div>
+                        <div class="form-group">
+                         <label for="fats">Fats (gm)</label>
+                         <input type="number" class="form-control form-control-sm" id="fats" placeholder="Fats in gm" required>
+                        </div>
+                        <button class="btn font-weight-bold" id="macros" type="button">Calculate Macros</button>
+                        <div class="form-group">
+                         <label for="macros">Result</label>
+                         <input type="text" class="form-control form-control-sm" id="kcal"  readonly>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+             <div class="col-6 md-5 p-3">
+                 <div><b>BMI Categories based on WHO Data</b><hr style="background-color: rgb(152, 21, 55);"></div>
+                                                  <p>The dashed lines represent subdivisions within a major categorization.</p>
+
+                 <img class="p-2 chart" src="https://d26tpo4cm8sb6k.cloudfront.net/img/bmi-chart.gif" alt="" width="100%"/>
+                 <br><br>
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container  mt-5 p-3">
+        <div class="ml-2 p-2" style="background-color: rgb(135, 156, 42);">
+    <b >Benefits of you being Healthy</b></div>
+        <p class="ml-3 h5 p-2">Apart from reducing the risk of the health conditions, maintaining a healthy weight offers additional benefits:</p>
+    <div class="container">
+    <ul>
+        <li >Fewer joint and muscle pains.</li>
+        <li >Increased energy and ability to join in more activities.</li>
+        <li>Improved regulation of bodily fluids and blood pressure.</li>
+        <li >Reduced burden on the heart and circulatory system.</li>
+        <li >Improved sleep patterns.</li>
+    </ul>
+    </div>
+</div>
+
+<div class="container  mt-5 p-3">
+        <div class="ml-2 p-2" style="background-color: rgb(135, 156, 42);">
+    <b >BMI and health</b></div>
+    <ul>
+        <li><h5>Body fat is relevant, not body mass</h5></li>
+        <p>As far as health is concerned, excess body fat is negative. In contrast, an above-average muscle mass is more likely to be positive.</p>
+        <p>The BMI does not distinguish between body fat and fat-free mass. Yet statistics show that the body mass index of about 73 percent of the people is quite a significant indicator of the body fat percentage.</p>
+        <p>Thus, in three out of four cases, the BMI seems to have a significant relevance to health and in one out of four cases it does not seem to have any.</p>
+        <li><h5>Body fat percentage vs. BMI</h5></li>
+        <p>Despite its high relevance to health, the body fat percentage has its shortcomings. Scales for measuring body fat are simple to use but imprecise; the more accurate methods are very complicated and require skilled personnel.</p>
+        <p>The BMI, in contrast, can be calculated from two simple measurements which are reliable in most cases.</p>
+        <p>This seems to be the main reason why the BMI is still the most widely used value for estimating the body fat.</p>
+    </ul>
+
+</div>

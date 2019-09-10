@@ -1,0 +1,83 @@
+{{!-- carousel --}}
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://timelinecovers.pro/facebook-cover/download/fitness-motivation-facebook-cover.jpg"  width="1100" height="200">
+    </div>
+    <div class="carousel-item">
+      <img src="https://coverfiles.alphacoders.com/306/30616.jpg"  width="1100" height="200">
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/originals/56/c9/13/56c913d5f3e40bbfef8a621e4223b430.jpg"  width="1100" height="200">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+{{!-- carousel end --}}
+
+<div class="body">
+<div class="container "> 
+    <div class="row">
+        <div class="col-6  rounded  cal">
+            <img class="rounded-circle ml-4 profile-pic" src="https://pickaface.net/gallery/avatar/28944528_180710_0122_8zrjz4.png" width="125px" height="125px">
+            <div class="userName">{{data.fname}}&nbsp;{{data.lname}}</div>
+          <div  class="bmi"> <form>
+             <div class="row font-weight-bold">
+                  <div class="col">
+                      <label for="weight">Weight in kgs</label>
+                      <input type="number" class="form-control" placeholder="Weight(kg)" id="weight" name="weight" required value={{data.weight}} >
+                  </div>
+                  <div class="col">
+                                            <label for="height">Height in mts</label>
+                      <input type="number" class="form-control" placeholder="Height(mts)"  id="height" name="height" required value={{data.height}} >
+                  </div>
+             </div><br>
+             <div>
+                      <input type="number" class="form-control" placeholder="BMI"  id="result" name="bmiValue" readonly required>
+                  </div>
+             <br>
+             <button  id="calculate" class="btn text-light btns" type="button">BMI Value</button>&nbsp;
+            <button class="btn text-light btns float-right" type="button" value={{data._id}} id="report" disabled>View Full Report</button>
+            </form> </div> 
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="container bg-light mt-5 p-3">
+    <div class="ml-2 p-2" style="background-color: rgb(135, 156, 42);">
+    <b>BMI and health</b></div>
+    <ul>
+        <li><h5>Body fat is relevant, not body mass</h5></li>
+        <p>As far as health is concerned, excess body fat is negative. In contrast, an above-average muscle mass is more likely to be positive.</p>
+        <p>The BMI does not distinguish between body fat and fat-free mass. Yet statistics show that the body mass index of about 73 percent of the people is quite a significant indicator of the body fat percentage.</p>
+        <p>Thus, in three out of four cases, the BMI seems to have a significant relevance to health and in one out of four cases it does not seem to have any.</p>
+        <li><h5>Body fat percentage vs. BMI</h5></li>
+        <p>Despite its high relevance to health, the body fat percentage has its shortcomings. Scales for measuring body fat are simple to use but imprecise; the more accurate methods are very complicated and require skilled personnel.</p>
+        <p>The BMI, in contrast, can be calculated from two simple measurements which are reliable in most cases.</p>
+        <p>This seems to be the main reason why the BMI is still the most widely used value for estimating the body fat.</p>
+    </ul>
+
+</div>
+<div class="container bg-light mt-5 p-3">
+    <div class="ml-2 p-2" style="background-color: rgb(152, 21, 55); color: rgb(135,156,42)">
+    <b>Limitations of BMI</b></div>
+    <p class="ml-3  p-2">Although BMI is a widely used and useful indicator of healthy body weight, it does have its limitations. BMI is only an estimate that cannot take body composition into account. Due to a wide variety of body types as well as distribution of muscle, bone mass, and fat, BMI should be considered along with other measurements rather than being used as the sole method for determining a person's healthy body weight.</p>
+    </div>
+    
