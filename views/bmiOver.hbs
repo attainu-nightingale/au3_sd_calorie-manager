@@ -1,0 +1,102 @@
+<div class="body">
+<div class="container "> 
+    <div class="row">
+        <div class="col-6  rounded  cal">
+            <img class="rounded-circle ml-4 profile-pic" src="https://pickaface.net/gallery/avatar/28944528_180710_0122_8zrjz4.png" width="125px" height="125px">
+            <div class="userName">{{data.fname}}&nbsp;{{data.lname}}</div>
+            <div class="card text-dark  mb-3 " style="max-width: 18rem;">
+               <div class="card-header font-weight-bold h5"><i class="icon ion-ios-clipboard"></i>&nbsp;Report Card</div>
+               <div class="card-body">
+                  <p class="card-text">
+                          <li>Date of Birth:&nbsp;{{data.dob}}</li>
+                          <li>Weight:&nbsp;{{data.weight}}&nbsp;kg</li>
+                          <li>Height:&nbsp;{{data.height}}&nbsp;m</li>
+                      </p>
+               </div>
+            </div>
+            <div class="card-footer rounded font-weight-bold border-warning h4">Body Mass Index:&nbsp;{{data.bmiValue}}</div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="container-fluid" id="healthy">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 md-5 p-3">
+                <div><b>Well! You are an Overweight</b><hr style="background-color: rgb(152, 21, 55);"></div>
+                <p>Your BMI indicates that you are slightly overweight. You may be advised to lose some weight for health reasons. You are recommended to talk to your doctor or a dietitian for advice.</p>
+                                 <div class="container"  >
+                   <p class="text-center"> <b >Macros to Calories calculator</b></p>
+                    <form class="calories" >
+                        <div class="form-group">
+                         <label for="proteins">Protein (gm)</label>
+                         <input type="number" class="form-control form-control-sm" id="proteins" placeholder="Protein in gm" required>
+                        </div>
+                        <div class="form-group">
+                         <label for="carbs">Carbs (gm)</label>
+                         <input type="number" class="form-control form-control-sm" id="carbs" placeholder="Carbs in gm" required>
+                        </div>
+                        <div class="form-group">
+                         <label for="fats">Fats (gm)</label>
+                         <input type="number" class="form-control form-control-sm" id="fats" placeholder="Fats in gm" required>
+                        </div>
+                        <button class="btn font-weight-bold" id="macros" type="button">Calculate Macros</button>
+                        <div class="form-group">
+                         <label for="macros">Result</label>
+                         <input type="text" class="form-control form-control-sm" id="kcal" readonly>
+                        </div>
+
+                    </form>
+
+                </div>
+
+
+            </div>
+             <div class="col-6 md-5 p-3">
+                 <div><b>BMI Categories based on WHO Data</b><hr style="background-color: rgb(152, 21, 55);"></div>
+                 <p>The dashed lines represent subdivisions within a major categorization.</p>
+                 <img class="p-2 chart" src="https://d26tpo4cm8sb6k.cloudfront.net/img/bmi-chart.gif" alt="" width="100%"/>
+                 <br><br>
+                                 
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="container  mt-5 p-3">
+        <div class="ml-2 p-2" style="background-color: rgb(135, 156, 42);">
+    <b >Risks associated with being overweight</b></div>
+            <p class="ml-3 h5 p-2">Below is a list of said risks, according to the Centers for Disease Control and Prevention (CDC):</p>
+
+        <div class="container">
+    <ul>
+        <li >Higher levels of LDL cholesterol, which is widely considered "bad cholesterol," lower levels of HDL cholesterol, considered to be good cholesterol in moderation, and high levels of triglycerides</li>
+        <li >Certain cancers (endometrial, breast, colon, kidney, gallbladder, liver)</li>
+        <li>Mental illnesses such as clinical depression, anxiety, and others</li>
+        <li >Body pains and difficulty with certain physical functions</li>
+        <li >Low quality of life</li>
+    </ul>
+    </div>
+ <p class="ml-3 h6 p-2">*Generally, a person should try to maintain a BMI below 25 kg/m2, but ideally should consult their doctor to determine whether or not they need to make any changes to their lifestyle in order to be healthier.</p>
+
+
+</div>
+<div class="container  mt-5 p-3">
+            <div class="ml-2 p-2" style="background-color: rgb(135, 156, 42);">
+    <b >BMI and health</b></div>
+
+    <ul>
+        <li><h5>Body fat is relevant, not body mass</h5></li>
+        <p>As far as health is concerned, excess body fat is negative. In contrast, an above-average muscle mass is more likely to be positive.</p>
+        <p>The BMI does not distinguish between body fat and fat-free mass. Yet statistics show that the body mass index of about 73 percent of the people is quite a significant indicator of the body fat percentage.</p>
+        <p>Thus, in three out of four cases, the BMI seems to have a significant relevance to health and in one out of four cases it does not seem to have any.</p>
+        <li><h5>Body fat percentage vs. BMI</h5></li>
+        <p>Despite its high relevance to health, the body fat percentage has its shortcomings. Scales for measuring body fat are simple to use but imprecise; the more accurate methods are very complicated and require skilled personnel.</p>
+        <p>The BMI, in contrast, can be calculated from two simple measurements which are reliable in most cases.</p>
+        <p>This seems to be the main reason why the BMI is still the most widely used value for estimating the body fat.</p>
+    </ul>
+
+</div>

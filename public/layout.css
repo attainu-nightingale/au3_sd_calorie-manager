@@ -1,0 +1,56 @@
+*{
+    box-sizing:  border-box;
+}
+header{
+    padding: 15px 0 6px;
+
+}
+#brand{
+color: rgb(135, 156, 42);
+}
+.menu:hover{
+    background-color: rgb(135, 156, 42);
+    border-color: rgb(135, 156, 42);
+    border-radius: 1.5rem;
+
+ 
+}
+.menu {
+    border-radius: 1.5rem;
+}
+.links:hover{
+    background-color:  rgb(152, 21, 55);
+    border-radius: 1.5rem;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    box-shadow: 2px 2px 5px rgb(135, 156, 42);
+        font-weight:  bold;
+
+}
+.logo{
+    font-size: 40px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.links{
+    color: rgb(135, 156, 42);
+    /* font-weight:  bold; */
+}
+a:link:active, a:visited:active {
+    color: orange;
+  }
+b{
+    font-size: 24px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+p{
+    line-height: 1.5rem;
+}
+@media(max-width: 600px){
+    p{
+        font-size: .90rem;
+        line-height: inherit;
+    }
+    
+}
+
+

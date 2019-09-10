@@ -1,0 +1,85 @@
+*{
+    box-sizing:  border-box;
+    margin: 0%;
+    padding: 0%;
+  }
+  body {
+      background-image: url("https://images.unsplash.com/photo-1496412705862-e0088f16f791?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+
+      background-size: cover;
+
+      background-attachment: fixed;
+      /* font-family: 'Times New Roman', Times, serif; */
+      font-family: "Comic Sans MS", cursive, sans-serif;
+
+    }
+  .col-8{
+    background: rgba(0,0,0,0.6);
+    /* box-shadow: -1px 1px 50px 10px black ; */
+    border-radius: 20px;
+    padding: 10px;
+  }
+  .sex{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding:  inherit;
+    color: white;
+    background: rgba(0,0,0,0.8)
+  }
+  .a{
+    font-size: 40px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: rgb(135, 156, 42);
+  }
+  a:hover{
+    color: orange;
+    text-decoration:  none;
+  }
+  .label{
+    font-size: 20px;
+    color: white;
+    font-weight: normal; 
+  }
+  form-control{
+    background: transparent;
+    border-radius: 0px;
+    border: 0px;
+    border-bottom: 2px solid lightgreen;
+    margin-bottom: 30px;
+    font-size: 22px;
+    color: white;
+    padding: 20px; 
+  }
+  li{
+   
+    padding-left:150px;
+  }
+  .custom-control{
+    font-size: 20px;
+    color: white;
+    font-weight: normal; 
+  }
+  p{
+    margin: 50 50 50 50;
+    padding-left:5px;
+    color: white;
+  }
+  ol{
+    margin: 50 50 50 50;
+  
+    padding-right:100px;
+    color: white;
+  }
+  .btns{
+    background-color:  rgb(135, 156, 42);
+    border-radius: 20px;
+    color: rgb(152, 21, 55);
+
+}
+.btns:hover{
+    /* text-shadow: 2px 2px 5px black; */
+    font-weight:  bold;
+    color: rgb(152, 21, 55);
+    box-shadow: 2px 2px 5px rgb(152, 21, 55);
+}
+  

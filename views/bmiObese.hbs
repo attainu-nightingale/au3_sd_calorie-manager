@@ -1,0 +1,101 @@
+<div class="body">
+<div class="container "> 
+    <div class="row">
+        <div class="col-6  rounded  cal">
+            <img class="rounded-circle ml-4 profile-pic" src="https://pickaface.net/gallery/avatar/28944528_180710_0122_8zrjz4.png" width="125px" height="125px">
+            <div class="userName">{{data.fname}}&nbsp;{{data.lname}}</div>
+            <div class="card text-dark  mb-3 " style="max-width: 18rem;">
+               <div class="card-header font-weight-bold h5"><i class="icon ion-ios-clipboard"></i>&nbsp;Report Card</div>
+               <div class="card-body">
+                  <p class="card-text">
+                          <li>Date of Birth:&nbsp;{{data.dob}}</li>
+                          <li>Weight:&nbsp;{{data.weight}}&nbsp;kg</li>
+                          <li>Height:&nbsp;{{data.height}}&nbsp;m</li>
+                      </p>
+               </div>
+            </div>
+            <div class="card-footer rounded font-weight-bold border-danger h4">Body Mass Index:&nbsp;{{data.bmiValue}}</div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="container-fluid" id="healthy">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 md-5 p-3">
+                <div><b>Ouch! You are an Obese</b><hr style="background-color: rgb(152, 21, 55);"></div>
+                <p>Your BMI is over <b class="text-danger">30</b> which indicates that you are heavily overweight. Your health may be at risk if you do not lose weight. You are recommended to talk to your doctor or a dietitian for advice.</p>
+                                <div class="container"  >
+                   <p class="text-center"> <b >Macros to Calories calculator</b></p>
+                    <form class="calories" >
+                        <div class="form-group">
+                         <label for="proteins">Protein (gm)</label>
+                         <input type="number" class="form-control form-control-sm" id="proteins" placeholder="Protein in gm" required>
+                        </div>
+                        <div class="form-group">
+                         <label for="carbs">Carbs (gm)</label>
+                         <input type="number" class="form-control form-control-sm" id="carbs" placeholder="Carbs in gm" required>
+                        </div>
+                        <div class="form-group">
+                         <label for="fats">Fats (gm)</label>
+                         <input type="number" class="form-control form-control-sm" id="fats" placeholder="Fats in gm" required>
+                        </div>
+                        <button class="btn font-weight-bold" id="macros" type="button">Calculate Macros</button>
+                        <div class="form-group">
+                         <label for="macros">Result</label>
+                         <input type="text" class="form-control form-control-sm" id="kcal" readonly>
+                        </div>
+
+                    </form>
+
+                </div>
+
+
+            </div>
+             <div class="col-6 md-5 p-3">
+                 <div><b>BMI Categories based on WHO Data</b><hr style="background-color: rgb(152, 21, 55);"></div>
+                 <p>The dashed lines represent subdivisions within a major categorization.</p>
+                 <img class="p-2 chart" src="https://d26tpo4cm8sb6k.cloudfront.net/img/bmi-chart.gif" alt="" width="100%"/>
+                 <br><br>
+                                 
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="container  mt-5 p-3">
+        <div class="ml-2 p-2" style="background-color: rgb(135, 156, 42);">
+    <b >Health risks related to Obesity</b></div>
+        <div class="container">
+    <ul>
+        <li >Heart disease and stroke</li>
+        <li >High blood pressure</li>
+        <li>Diabetes</li>
+        <li >Gallbladder disease and gallstones</li>
+        <li >Osteoarthritis</li>
+        <li>Breathing problems, such as sleep apnea (when a person stops breathing for short episodes during sleep) and asthma</li>
+    </ul>
+    </div>
+ <p class="ml-3 h6 p-2">*Not everyone who is obese has these problems. The risk rises if you have a family history of one of those conditions.</p>
+
+</div>
+
+<div class="container mt-5 p-3">
+        <div class="ml-2 p-2" style="background-color: rgb(135, 156, 42);">
+    <b >BMI and health</b></div>
+
+    <ul>
+        <li><h5>Body fat is relevant, not body mass</h5></li>
+        <p>As far as health is concerned, excess body fat is negative. In contrast, an above-average muscle mass is more likely to be positive.</p>
+        <p>The BMI does not distinguish between body fat and fat-free mass. Yet statistics show that the body mass index of about 73 percent of the people is quite a significant indicator of the body fat percentage.</p>
+        <p>Thus, in three out of four cases, the BMI seems to have a significant relevance to health and in one out of four cases it does not seem to have any.</p>
+        <li><h5>Body fat percentage vs. BMI</h5></li>
+        <p>Despite its high relevance to health, the body fat percentage has its shortcomings. Scales for measuring body fat are simple to use but imprecise; the more accurate methods are very complicated and require skilled personnel.</p>
+        <p>The BMI, in contrast, can be calculated from two simple measurements which are reliable in most cases.</p>
+        <p>This seems to be the main reason why the BMI is still the most widely used value for estimating the body fat.</p>
+    </ul>
+
+</div>
