@@ -35,7 +35,15 @@
 <div class="container "> 
     <div class="row">
         <div class="col-6  rounded  cal">
-            <img class="rounded-circle ml-4 profile-pic" src="https://pickaface.net/gallery/avatar/28944528_180710_0122_8zrjz4.png" width="125px" height="125px">
+            <img class="rounded-circle ml-4 profile-pic" src={{data.profilePic}} width="150px" height="150px" class="d-inline-block align-top "/><br><br>
+           <form action="upload" method="POST" enctype="multipart/form-data" class="ml-4">
+                <label for="file-upload" class="custom-file-upload text-light">
+                         <i class="icon ion-ios-image"></i> <span class="tooltiptext">Edit Profile Picture</span>
+                              </label>
+                       <input id="file-upload" type="file" name="profilePic"/>
+                       <button type="submit" id="uploadImg" class="btn btn-sm btn-transparent text-black" style="border-radius: 20px; padding:5px;"><img src="https://img.icons8.com/ios/20/000000/upload.png"> Upload</button>
+           </form>
+           
             <div class="userName">{{data.fname}}&nbsp;{{data.lname}}</div>
           <div  class="bmi"> <form>
              <div class="row font-weight-bold">

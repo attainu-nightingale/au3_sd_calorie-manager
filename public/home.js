@@ -8,6 +8,9 @@ $('#calculate').click(function(){
     console.log(r);
     $('#report').attr('disabled', false)
 });
+$('#uploadImg').click(function(){
+    $('this').hide();
+})
 $('#report').click(function(){
     var objID={
         _id:$(this).val()
