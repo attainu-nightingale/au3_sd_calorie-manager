@@ -28,7 +28,7 @@ color: rgb(135, 156, 42);
 
 }
 .logo{
-    font-size: 40px;
+    font-size: 30px;
     font-family: "Comic Sans MS", cursive, sans-serif;
 }
 .links{
@@ -50,6 +50,7 @@ p{
         font-size: .90rem;
         line-height: inherit;
     }
+    
     
 }
 

@@ -49,11 +49,14 @@
                             <label class="label control-label">Last Name</label>
                             <input type="text" class="form-control" name="lname" placeholder="Last Name*" required>
                             <label class="label control-label">Password</label>
-                            <input type="password" class="form-control" name="password" placeholder="Password*" maxlength="8" required>
+                            <input type="password" class="form-control" name="password" placeholder="Password*" maxlength="8" id="pass" required>
+                                                        <label class="label control-label">Confirm Password</label>
+                            <input type="password" class="form-control"  placeholder="Re-enter Password*" maxlength="8" id="cPass" required>
+
                             <label class="label control-label">Current Weight</label>
                             <input type="number" id="weight" class="form-control" placeholder="Weight(kg)" data-unit-system="kg" name="weight">
                             <label class="label control-label inline">Current Height</label>
-                            <input type="number" id="height" class="form-control" placeholder="Height(m)" data-unit-system="m" name="height">
+                            <input type="number" id="height" class="form-control" placeholder="Height(m)" step="0.01" min="0" max="10" data-unit-system="m" name="height">
                           
                         </div>   
                     </div><br>
