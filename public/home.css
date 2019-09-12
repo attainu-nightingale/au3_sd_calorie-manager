@@ -34,12 +34,16 @@
     padding: 15px;
   }
 .userName{
-    margin-left: 10px;
+    margin-left: 30px;
     padding: 10px 20px;
     color:  rgb(152, 21, 55);
     font-size: 25px;
     font-weight:  bolder;
     text-transform:  capitalize;
+}
+.name{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+
 }
 .bmi{
     background: rgba(0, 0, 0, 0.2);
@@ -60,9 +64,11 @@
 .col-12 {width: 100%;}
 .profile-pic{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-image: url(https://sytecg.com/wp-content/uploads/2018/07/85622928-default-avatar-profile-icon-grey-photo-placeholder-illustrations-vectors.jpg);
+  background: url(https://sytecg.com/wp-content/uploads/2018/07/85622928-default-avatar-profile-icon-grey-photo-placeholder-illustrations-vectors.jpg) no-repeat scroll 0 0;
   background-repeat:  no-repeat;
     background-size:  cover;
+    height: 150px;
+    weight: 150px;
 }
 .card{
     background: rgba(0, 0, 0, 0.2);
@@ -94,21 +100,58 @@ input[type="file"] {
     padding: 6px 12px;
     cursor: pointer;
 }
-.custom-file-upload .tooltiptext {
-    visibility: hidden;
-    background: rgba(0,0,0,0.7);
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px ;
-  
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
+  #name {
+    display:none;
   }
-.custom-file-upload:hover .tooltiptext{
-    visibility: visible;
+  #mail {
+    display:none;
+  }
+  #dob {
+    display:none;
+  }
+  #gender {
+    display:none;
+  }
+  #status {
+    display:none;
+  }
+  #wh {
+    display:none;
+  }
+  #cname {
+    display:none;
+  }
+  #cmail {
+    display:none;
+  }
+  #cdob {
+    display:none;
+  }
+  #csex {
+    display:none;
+  }
+  #cstat {
+    display:none;
+  }
+  #cwh {
+    display:none;
+  }
+  #image{
+    display:none;
+  }
+  #cimage{
+    display:none;
+  }
+
+.profile{
+  text-transform:  capitalize;
 }
+h4{
+  padding: 10px 20px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+font-size: 20px;
+}
+
 @media(max-width:600px){
     /* .form-control{
         width: 100%;

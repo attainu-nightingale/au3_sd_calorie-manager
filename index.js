@@ -96,6 +96,70 @@ app.post("/signup", function(req, res) {
   console.log("inserted");
   res.redirect('/');
 });
+// profile editing route
+/////////////////////////////////////////////////////////////////////////////////////
+app.post('/editName',function(req,res){
+  db.collection('users').updateOne({"email":req.session.user},{$set:req.body},function(error,result){
+    if(error) throw error;
+    if(req.session.loggedIn){
+      res.redirect('/home/editProfile');
+       console.log(req.body)
+    }
+    else res.redirect('/');
+  })
+})
+app.post('/editMail',function(req,res){
+  db.collection('users').updateOne({"email":req.session.user},{$set:req.body},function(error,result){
+    if(error) throw error;
+    if(req.session.loggedIn){
+      res.redirect('/home/editProfile');
+       console.log(req.body)
+    }
+    else res.redirect('/');
+  })
+})
+app.post('/editDob',function(req,res){
+  db.collection('users').updateOne({"email":req.session.user},{$set:req.body},function(error,result){
+    if(error) throw error;
+    if(req.session.loggedIn){
+      res.redirect('/home/editProfile');
+       console.log(req.body)
+    }
+    else res.redirect('/');
+  })
+})
+app.post('/editSex',function(req,res){
+  db.collection('users').updateOne({"email":req.session.user},{$set:req.body},function(error,result){
+    if(error) throw error;
+    if(req.session.loggedIn){
+      res.redirect('/home/editProfile');
+       console.log(req.body)
+    }
+    else res.redirect('/');
+  })
+})
+app.post('/editWh',function(req,res){
+  db.collection('users').updateOne({"email":req.session.user},{$set:req.body},function(error,result){
+    if(error) throw error;
+    if(req.session.loggedIn){
+      res.redirect('/home/editProfile');
+       console.log(req.body)
+    }
+    else res.redirect('/');
+  })
+})
+app.post('/editStatus',function(req,res){
+  db.collection('users').updateOne({"email":req.session.user},{$set:req.body},function(error,result){
+    if(error) throw error;
+    if(req.session.loggedIn){
+      res.redirect('/home/editProfile');
+       console.log(req.body)
+    }
+    else res.redirect('/');
+  })
+})
+
+/////////////////////////////////////////////////////////////////////////////////////
 //profile picture upload
 app.post("/upload",upload.single('profilePic'),function(req,res,next){
   if(req.session.loggedIn){
@@ -186,6 +250,23 @@ app.get('/home/bmiReport',function(req,res){
   res.redirect('/');
 
 })
+})
+// edit profile route
+app.get('/home/editProfile',function(req,res){
+  var user;
+  db.collection('users').findOne({ "email": req.session.user },function(error,result){
+    user=result;
+    if(error) throw error
+    if(req.session.loggedIn){
+      res.render("editProfile.hbs",{
+        title:"My Profile",
+        style:'/home.css',
+        script:'/profile.js',
+        data:user
+       })
+    }
+else res.redirect('/');
+    })
 })
 //logout route
 app.get('/logout', (req, res) => {

@@ -5,5 +5,5 @@ $('#macros').click(function(){
     var f=parseFloat($('#fats').val());
     var macro=((p*4)+(c*4)+(f*9));
     console.log(macro);
-    $('#kcal').val(macro+" "+"kcal");
+    $('#kcal').val(macro+" "+"kcal"+" "+"Total calorie consumption");
 });
