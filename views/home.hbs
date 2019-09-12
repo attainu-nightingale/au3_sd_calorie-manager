@@ -35,15 +35,17 @@
 <div class="container "> 
     <div class="row">
         <div class="col-6  rounded  cal">
-            <img class="rounded-circle ml-4 profile-pic" src={{data.profilePic}} width="150px" height="150px" class="d-inline-block align-top "/><br><br>
+            <img class="rounded-circle ml-4 profile-pic" src={{data.profilePic}} width="150px" height="150px" class="d-inline-block align-bottom "/>                      <button class="btn btn-transparent" id="img" data-toggle="tooltip" title="Edit Profile Pic"><i class="icon ion-md-create"></i></button>&nbsp;<button class="btn btn-transparent" id="cimage"><i class="icon ion-md-close"></i></button>
+<br>
+            <div id="image">
            <form action="upload" method="POST" enctype="multipart/form-data" class="ml-4">
                 <label for="file-upload" class="custom-file-upload text-light">
-                         <i class="icon ion-ios-image"></i> <span class="tooltiptext">Edit Profile Picture</span>
+                         <i class="icon ion-ios-image"></i> <span class="tooltiptext">Choose an image</span>
                               </label>
                        <input id="file-upload" type="file" name="profilePic"/>
                        <button type="submit" id="uploadImg" class="btn btn-sm btn-transparent text-black" style="border-radius: 20px; padding:5px;"><img src="https://img.icons8.com/ios/20/000000/upload.png"> Upload</button>
            </form>
-           
+           </div>
             <div class="userName">{{data.fname}}&nbsp;{{data.lname}}</div>
           <div  class="bmi"> <form>
              <div class="row font-weight-bold">

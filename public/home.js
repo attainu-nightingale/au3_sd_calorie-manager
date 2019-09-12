@@ -8,9 +8,20 @@ $('#calculate').click(function(){
     console.log(r);
     $('#report').attr('disabled', false)
 });
-$('#uploadImg').click(function(){
-    $('this').hide();
-})
+// profile upload
+$(document).on("click","#img",function(){
+    $('#image').show();
+    $('#cimage').show();
+  });
+  $(document).on("click","#cimage",function(){
+    $('#image').hide();
+    $('#cimage').hide();
+  });
+// tooltip
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+     });
+    //  bmi
 $('#report').click(function(){
     var objID={
         _id:$(this).val()
