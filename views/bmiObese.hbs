@@ -66,6 +66,63 @@
 
     </div>
 </div>
+{{!-- BMR calculation --}}
+<div class="bg-white"><br>
+    <div class="container">
+                        <div class="ml-2 p-2 text-light" style="background-color: rgb(152, 21, 55);"><b>BMR(Basal Metabolic Rate)</b></div>
+                <p class="ml-3  p-2">Your BMR is the amount of energy you expend each day when at rest.  This Calculator allows you to calculate not only the number of calories you burn when inactive, but also a daily calorie figure that takes into account your lifestyle activity level. </p>
+
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 md-5 p-3" >
+                <div class="container">
+                    <p class="text-center"> <b>BMR Calculation</b><hr></p>
+                    <form class="calories" id="calBmr" autocomplete="on">
+                        <div class="form-group">
+                         <label for="weight">Weight in kg:</label>
+                         <input type="number" class="form-control form-control-sm" id="weight" value={{data.weight}} readonly>
+                        </div>
+                        <div class="form-group">
+                         <label for="height">Height in cm:</label>
+                         <input type="number" class="form-control form-control-sm" id="height" value={{data.height}} readonly>
+                        </div>
+                        <div class="form-group">
+                         <label for="age">Age:</label>
+                         <input type="number" class="form-control form-control-sm" id="age" required>
+                        </div>
+                        <p class="font-weight-bold">Gender:
+                              <br/><div class="bottom text-light">
+                                <input type="radio" name="gender" value="male" id="male" required>&nbsp;<label class="l" for="male">Male</label><br>  
+                                <input type="radio" name="gender" value="female" id="female" required>&nbsp;<label class="l" for="female">Female</label><br>
+                                </div>
+                              </p>
+                              <p class="font-weight-bold">Please select your activity level:<br/>
+	                            <div class="bottom text-light radio">
+			                      <input type="radio" name="act" value="0" id="0">&nbsp;<label class="l" for="0">If you are sedentary (little or no exercise)</label> <br>
+			                      <input type="radio" name="act" value="1" id="1">&nbsp;<label class="l" for="1">If you are lightly active (light exercise or sports 1-3 days/week)</label> <br>
+			                       <input type="radio" name="act" value="2" id="2">&nbsp;<label class="l" for="2">If you are moderately active (moderate exercise 3-5 days/week)</label> <br>
+			                      <input type="radio" name="act" value="3" id="3">&nbsp;<label class="l" for="3">If you are very active (hard exercise 6-7 days/week)</label> <br>
+                                 <input type="radio" name="act" value="4" id="4">&nbsp;<label class="l" for="4">If you are super active (very hard exercise and a physical job)</label> <br>
+	                                </div></p>
+                              <button class="btn font-weight-bold " id="bmr" type="button">BMR</button><br>
+                              <div class="form-group" id="bmrRes" style="display: none;"><br>
+                         <textarea class="form-control alert alert-danger font-weight-bold" rows="3" id="daily" readonly></textarea>
+                        </div>
+                        <div class="form-group" id="summary" style="display: none;">
+                         <label for="bmr">Summary:</label>
+                         <textarea class="form-control alert alert-success font-weight-bold" rows="3" id="dailyBmr" readonly></textarea>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+
+    </div>
+</div>
+
 <div class="container  mt-5 p-3">
         <div class="ml-2 p-2" style="background-color: rgb(135, 156, 42);">
     <b >Health risks related to Obesity</b></div>
