@@ -67,8 +67,6 @@
   background: url(https://sytecg.com/wp-content/uploads/2018/07/85622928-default-avatar-profile-icon-grey-photo-placeholder-illustrations-vectors.jpg) no-repeat scroll 0 0;
   background-repeat:  no-repeat;
     background-size:  cover;
-    height: 150px;
-    weight: 150px;
 }
 .card{
     background: rgba(0, 0, 0, 0.2);
@@ -80,7 +78,7 @@
 
 }
 .calories{
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.1);
     padding: 10px 20px;
     border-radius: 10px;
    
@@ -148,8 +146,6 @@ input[type="file"] {
 }
 h4{
   padding: 10px 20px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-font-size: 20px;
 }
 
 @media(max-width:600px){
