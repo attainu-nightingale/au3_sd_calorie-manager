@@ -15,7 +15,7 @@
     <div class="container mt-5 p-3">
          <div class="ml-2 p-2" style="background-color: rgb(135, 156, 42);">
     <b >Basic Profile Info.</b></div>
-    <p class="ml-3 h4 p-2 profile">Name:&nbsp;{{data.fname}}&nbsp;{{data.lname}} <button class="btn btn-transparent" id="ename"><i class="icon ion-md-create"></i></button>&nbsp;<button class="btn btn-transparent" id="cname"><i class="icon ion-md-close"></i></button>
+    <p class="ml-3 h5 p-2 profile font-italic"><span class="h4 font-weight-bold">Name:</span>&nbsp;{{data.fname}}&nbsp;{{data.lname}} <button class="btn btn-transparent" id="ename"><i class="icon ion-md-create"></i></button>&nbsp;<button class="btn btn-transparent" id="cname"><i class="icon ion-md-close"></i></button>
         <div id="name" class="ml-4 mr-4">
             <form action="/editName" method="POST">
         <div class="row">
@@ -30,7 +30,7 @@
         </form>
         </div>
     </p>
-        <p class="ml-3 h4 p-2">E-Mail:&nbsp;{{data.email}}<button class="btn btn-transparent" id="eml"><i class="icon ion-md-create"></i></button>&nbsp;<button class="btn btn-transparent" id="cmail"><i class="icon ion-md-close"></i></button>
+        <p class="ml-3 h5 p-2 font-italic"><span class="h4 font-weight-bold">E-mail:</span>&nbsp;{{data.email}}<button class="btn btn-transparent" id="eml"><i class="icon ion-md-create"></i></button>&nbsp;<button class="btn btn-transparent" id="cmail"><i class="icon ion-md-close"></i></button>
         <div id="mail" class="ml-4 mr-4">
             <form action="/editMail" method="POST">
         <div class="row">
@@ -42,7 +42,7 @@
         </form>
         </div>
     </p>
-        <p class="ml-3 h4 p-2 profile">Date of birth:&nbsp;{{data.dob}}<button class="btn btn-transparent" id="edob"><i class="icon ion-md-create"></i></button>&nbsp;<button class="btn btn-transparent" id="cdob"><i class="icon ion-md-close"></i></button>
+        <p class="ml-3 h5 p-2 profile font-italic"><span class="h4 font-weight-bold">Date of Birth:</span>&nbsp;{{data.dob}}<button class="btn btn-transparent" id="edob"><i class="icon ion-md-create"></i></button>&nbsp;<button class="btn btn-transparent" id="cdob"><i class="icon ion-md-close"></i></button>
         <div id="dob" class="ml-4 mr-4">
             <form action="/editDob" method="POST">
         <div class="row">
@@ -54,7 +54,7 @@
         </form>
         </div>
     </p>
-            <p class="ml-3 h4 p-2 profile">Gender:&nbsp;{{data.gender}}<button class="btn btn-transparent" id="egen"><i class="icon ion-md-create"></i></button>&nbsp;<button class="btn btn-transparent" id="csex"><i class="icon ion-md-close"></i></button>
+            <p class="ml-3 h5 p-2 profile font-italic"><span class="h4 font-weight-bold">Gender:</span>&nbsp;{{data.gender}}<button class="btn btn-transparent" id="egen"><i class="icon ion-md-create"></i></button>&nbsp;<button class="btn btn-transparent" id="csex"><i class="icon ion-md-close"></i></button>
         <div id="gender" class="ml-4 mr-4">
             <form action="/editSex" method="POST">
         <div class="row">
@@ -68,7 +68,7 @@
         </div>
     </p>
 
-    <p class="ml-3 h4 p-2 profile">Weight:&nbsp;{{data.weight}}&nbsp;kg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Height:&nbsp;{{data.height}}&nbsp;m <button class="btn btn-transparent" id="ewh"><i class="icon ion-md-create"></i></button>&nbsp;<button class="btn btn-transparent" id="cwh"><i class="icon ion-md-close"></i></button>
+    <p class="ml-3 h5 p-2 profile font-italic"><span class="h4 font-weight-bold">Weight:</span>&nbsp;{{data.weight}}&nbsp;kg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="h4 font-weight-bold">Height:</span>&nbsp;{{data.height}}&nbsp;m <button class="btn btn-transparent" id="ewh"><i class="icon ion-md-create"></i></button>&nbsp;<button class="btn btn-transparent" id="cwh"><i class="icon ion-md-close"></i></button>
         <div id="wh" class="ml-4 mr-4">
             <form action="/editWh" method="POST">
         <div class="row">
@@ -83,7 +83,7 @@
         </form>
         </div>
     </p>
-        <p class="ml-3 h4 p-2">My Status:&nbsp;{{data.status}}<button class="btn btn-transparent" id="estat"><i class="icon ion-md-create"></i></button>&nbsp;<button class="btn btn-transparent" id="cstat"><i class="icon ion-md-close"></i></button>
+        <p class="ml-3 h5 p-2 font-italic text-capitalize"><span class="h4 font-weight-bold">My Status:</span>&nbsp;{{data.status}}<button class="btn btn-transparent" id="estat"><i class="icon ion-md-create"></i></button>&nbsp;<button class="btn btn-transparent" id="cstat"><i class="icon ion-md-close"></i></button>
         <div id="status" class="ml-4 mr-4">
             <form action="/editStatus" method="POST">
         <div class="row">
