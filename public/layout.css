@@ -21,7 +21,7 @@ color: rgb(135, 156, 42);
 .links:hover{
     background-color:  rgb(152, 21, 55);
     border-radius: 1.5rem;
-    color: white;
+    color: orange;
     text-shadow: 2px 2px 5px black;
     box-shadow: 2px 2px 5px rgb(135, 156, 42);
         font-weight:  bold;
@@ -35,8 +35,22 @@ color: rgb(135, 156, 42);
     color: rgb(135, 156, 42);
     /* font-weight:  bold; */
 }
+.navig{
+    background: linear-gradient(90deg,rgb(97, 94, 94),black);
+    border-left: 1px solid black;
+    border-radius: 35px;
+    padding: 5px,15px,5px,15px;
+
+}
 a:link:active, a:visited:active {
     color: orange;
+  }
+  .navigation{
+      background: rgba(0,0,0,1)
+  }
+  .foot{
+    background: rgba(0,0,0,1)
+  
   }
 b{
     font-size: 24px;

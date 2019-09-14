@@ -4,7 +4,7 @@
         <div class="col-6  rounded  cal">
             <img class="rounded-circle ml-4 profile-pic" src={{data.profilePic}} width="150px" height="150px">
             <div class="userName">{{data.fname}}&nbsp;{{data.lname}}</div>
-            <div class="card text-dark  mb-3 " style="max-width: 18rem;">
+            <div class="card text-dark  mb-3 " style="max-width: 25rem;">
                <div class="card-header font-weight-bold h5"><i class="icon ion-ios-clipboard"></i>&nbsp;Report Card</div>
                <div class="card-body">
                   <p class="card-text">
@@ -41,17 +41,28 @@
                          <label for="fats">Fats (gm)</label>
                          <input type="number" class="form-control form-control-sm" id="fats" placeholder="Fats in gm" required>
                         </div>
-                        <button class="btn font-weight-bold" id="macros" type="button">Calculate Macros</button>
-                        <div class="form-group" id="resultCal" style="display: none;">
-                         <label for="macros">Result</label>
-                         <input type="text" class="form-control form-control-sm alert alert-warning" id="kcal"  readonly>
-                        </div>
-
+                        <button class="btn font-weight-bold" id="macros" type="button" data-toggle="modal" data-target="#myModal">Calculate Macros</button>
+                        {{!-- modal --}}
+                          <div class="modal fade" id="myModal" role="dialog">
+                            <div class="modal-dialog modal-sm">
+                              <div class="modal-content bg-dark text-light">
+                                <div class="modal-header">
+                                    <h5>Calories from Micronutrient</h5>
+                                  </div>
+                               <div class="modal-body">
+                             <p class="font-weight-bold">
+                               <input type="text" class="form-control form-control-sm fornt-weight-bold alert alert-warning" id="kcal"  readonly></p>
+                                </div>
+                              <div class="modal-footer">
+                               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                           </div>
+                           </div>
+                         </div>
+                       </div>
                     </form>
-
                 </div>
-
             </div>
+
              <div class="col-6 md-5 p-3">
                  <div><b>BMI Categories based on WHO Data</b><hr style="background-color: rgb(152, 21, 55);"></div>
                                                   <p>The dashed lines represent subdivisions within a major categorization.</p>

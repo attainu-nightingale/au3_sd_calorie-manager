@@ -44,7 +44,7 @@ $.ajax({
 
     }
 })
-window.location.replace('/home/bmiReport');
+window.location.replace('/bmiReport');
 
 });
 

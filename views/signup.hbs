@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>{{title}}</title>
-    <link rel = "icon" type = "image/png" href = "https://files.slack.com/files-pri/TKXCYPJET-FMU4SPWMS/organic-food-logo-613ef00a48-seeklogo.com.png">
+    <link rel = "icon" type = "image/png" href = "logo.png">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,9 +22,9 @@
                     <div class="col-2"></div>
                     <div class="col-8">
                         <div class="d-flex justify-content-center ">
-                             <img src="https://files.slack.com/files-pri/TKXCYPJET-FMU4SPWMS/organic-food-logo-613ef00a48-seeklogo.com.png" width="70" height="70"class="d-inline-block align-bottom " alt="">
+                            
 
-                            <a href="/signup"  style="border-bottom: 2px solid lightgreen;padding: 10px;" class="a text-warning"> New Registration </a>
+                            <a href="/signup"  style="border-bottom: 2px solid tomato;padding: 10px;" class="a text-warning"> <img src="logo.png" width="70" height="70"class="d-inline-block align-bottom " alt="logo"> New Registration </a>
                         </div>
                         <br>
                     <div class="row">
@@ -37,8 +37,8 @@
                             <input type="email" class="form-control" name="email" placeholder="Email*" required>
                             <p>Please select your gender*:
                               <br/><div class="sex">
-                                <input type="radio" name="gender" value="male" required> Male<br>  
-                                <input type="radio" name="gender" value="female" required> Female<br>
+                                <input type="radio" name="gender" value="male" id="male" required> <label for="male">Male</label><br>  
+                                <input type="radio" name="gender" value="female" id="female"required> <label for="female">Female</label><br>
                                 </div>
                               </p>
                               

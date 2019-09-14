@@ -6,7 +6,7 @@ $('#macros').click(function(){
     var macro=((p*4)+(c*4)+(f*9));
     console.log(macro);
     $('#kcal').val(macro+" "+"Kcal"+" "+"-"+"total  consumption");
-    $('#resultCal').show();
+    // $('#resultCal').show();
 
 });
 $('#bmr').click(function(){

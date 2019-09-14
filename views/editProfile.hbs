@@ -4,7 +4,7 @@
         <div class="col-6  rounded  cal">
             <img class="rounded-circle ml-4 profile-pic" src={{data.profilePic}} width="350px" height="350px">
             <div class="userName name">{{data.fname}}&nbsp;{{data.lname}}</div>
-                        <div class="card-footer rounded font-weight-bold border-dark h4"><i class="icon ion-md-megaphone"></i>&nbsp;{{data.status}}</div>
+                        <div class="card-footer rounded font-weight-bold border-dark h4 text-capitalize"><i class="icon ion-md-megaphone"></i>&nbsp;{{data.status}}</div>
 
         </div>
     </div>
@@ -20,10 +20,10 @@
             <form action="/editName" method="POST">
         <div class="row">
                 <div class="col">
-                   <input type="text" class="form-control" placeholder="First name" name="fname" required>
+                   <input type="text" class="form-control" placeholder="First name" name="fname" required style="border:1px solid green">
            </div>
               <div class="col">
-                <input type="text" class="form-control" placeholder="Last name" name="lname" required>
+                <input type="text" class="form-control" placeholder="Last name" name="lname" required style="border:1px solid green">
           </div>
           <button type="submit" class="btn btns text-light">Update</button>
       </div>
@@ -35,7 +35,7 @@
             <form action="/editMail" method="POST">
         <div class="row">
                 <div class="col">
-                   <input type="email" class="form-control" placeholder="E-mail" name="email" required>
+                   <input type="email" class="form-control" placeholder="E-mail" name="email" required style="border:1px solid green">
            </div>
           <button type="submit" class="btn btns text-light">Update</button>
       </div>
@@ -47,7 +47,7 @@
             <form action="/editDob" method="POST">
         <div class="row">
                 <div class="col">
-                   <input type="date" class="form-control"  name="dob" required>
+                   <input type="date" class="form-control"  name="dob" required style="border:1px solid green">
            </div>
           <button type="submit" class="btn btns text-light">Update</button>
       </div>
@@ -68,15 +68,15 @@
         </div>
     </p>
 
-    <p class="ml-3 h5 p-2 profile font-italic"><span class="h4 font-weight-bold">Weight:</span>&nbsp;{{data.weight}}&nbsp;kg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="h4 font-weight-bold">Height:</span>&nbsp;{{data.height}}&nbsp;m <button class="btn btn-transparent" id="ewh"><i class="icon ion-md-create"></i></button>&nbsp;<button class="btn btn-transparent" id="cwh"><i class="icon ion-md-close"></i></button>
+    <p class="ml-3 h5 p-2 font-italic"><span class="h4 font-weight-bold">Weight:</span>&nbsp;{{data.weight}}&nbsp;kg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="h4 font-weight-bold">Height:</span>&nbsp;{{data.height}}&nbsp;m <button class="btn btn-transparent" id="ewh"><i class="icon ion-md-create"></i></button>&nbsp;<button class="btn btn-transparent" id="cwh"><i class="icon ion-md-close"></i></button>
         <div id="wh" class="ml-4 mr-4">
             <form action="/editWh" method="POST">
         <div class="row">
                 <div class="col">
-                   <input type="number" class="form-control" placeholder="Weight(kg)"  data-unit-system="kg"  name="weight" required>
+                   <input type="number" class="form-control" placeholder="Weight(kg)"  data-unit-system="kg"  name="weight" required style="border:1px solid green">
            </div>
               <div class="col">
-                <input type="number" class="form-control" placeholder="Height" step="0.01" min="0" max="10" data-unit-system="m" name="Height" required>
+                <input type="number" class="form-control" placeholder="Height" step="0.01" min="0" max="10" data-unit-system="m" name="Height" required style="border:1px solid green">
           </div>
           <button type="submit" class="btn btns text-light">Update</button>
       </div>
@@ -88,7 +88,7 @@
             <form action="/editStatus" method="POST">
         <div class="row">
                 <div class="col">
-                    <textarea class="form-control" rows="3" id="comment" placeholder="What's your status!" name="status"></textarea>
+                    <textarea class="form-control" rows="3" id="comment" placeholder="What's your status!" name="status" style="border:1px solid green"></textarea>
            </div>
           <button type="submit" class="btn btns text-light" style="max-height: 40px;">Update</button>
       </div>

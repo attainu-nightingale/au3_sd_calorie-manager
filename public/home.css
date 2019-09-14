@@ -183,6 +183,9 @@ input[type="file"] {
 h4{
   padding: 10px 20px;
 }
+.form-control-sm{
+  border:1px solid yellow;
+}
 
 @media(max-width:600px){
     /* .form-control{
