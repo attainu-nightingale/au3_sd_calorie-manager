@@ -24,6 +24,26 @@
     text-shadow: 2px 2px 5px white;
     box-shadow: 2px 2px 5px rgb(152, 21, 55);
 }
+#bmr{
+  background-color:  rgb(152, 21, 55);
+  border-radius: 20px;
+  color: rgb(135, 156, 42);
+
+}
+#bmr:hover{
+  box-shadow: 2px 2px 5px black;
+}
+label{
+  font-weight:  bolder;
+}
+.l{
+  font-weight: normal;
+
+}
+.l:hover{
+  cursor: pointer;
+}
+
 
 .btns:hover{
     box-shadow: 0 4px 8px 0 rgba(152, 21, 55, 0.5), 0 6px 20px 0 rgba(152, 21, 55, 0.19);
@@ -78,13 +98,29 @@
 
 }
 .calories{
-    background: rgba(0, 0, 0, 0.1);
+    /* background: rgba(0, 0, 0, 0.1); */
+    background-image: linear-gradient(90deg, grey,black);
+
     padding: 10px 20px;
     border-radius: 10px;
    
 }
-.form-control-sm{    border-radius: 20px;
+.bottom{
+  border: 1px solid black;
+  border-radius: 10px;
+  padding:  inherit;
+  color: white;
+  background: rgba(0,0,0,0.5)
 }
+
+#calBmr{
+  /* background: rgba(0, 0, 0, 0.5); */
+  background-image: linear-gradient(-90deg, rgb(152,21,55),rgb(135,156,42));
+  padding: 10px 20px;
+  border-radius: 5x;
+ 
+}
+
 .carousel-inner img {
     width: 100%;
 }
@@ -146,6 +182,9 @@ input[type="file"] {
 }
 h4{
   padding: 10px 20px;
+}
+.form-control-sm{
+  border:1px solid yellow;
 }
 
 @media(max-width:600px){

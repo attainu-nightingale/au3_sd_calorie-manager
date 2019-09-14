@@ -5,7 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>{{title}}</title>
     {{!-- title icon --}}
-    <link rel = "icon" type = "image/png" href = "https://files.slack.com/files-pri/TKXCYPJET-FMU4SPWMS/organic-food-logo-613ef00a48-seeklogo.com.png">
+    <link rel = "icon" type = "image/png" href = "logo.png">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     {{!-- bootstrap cdn and external css files --}}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -16,28 +16,29 @@
 </head>
 <body class="bg-light">
 {{!-- Header start --}}
-    <nav class="navbar navbar-light bg-dark  sticky-top">
+    <nav class="navbar navbar-light  sticky-top navigation" >
       {{!-- brand icon --}}
-  <a class="navbar-brand" id="brand" href="/home">
-    <img src="https://files.slack.com/files-pri/TKXCYPJET-FMU4SPWMS/organic-food-logo-613ef00a48-seeklogo.com.png" width="50" height="50"class="d-inline-block align-bottom " alt="">
-   <b class="logo"> Calorify.Me!</b>
+  <a class="navbar-brand" id="brand" href="/home" >
+    <img src="logo.png" width="50" height="50"class="d-inline-block align-bottom " alt="">
+   <b class="logo" style="border-bottom: 1px solid orange;"> Calorify.Me!</b>
   </a>
   {{!-- menu items --}}
-  <nav class="nav ">
-  <a class="nav-link links " href="/home"><i class="icon ion-ios-home"></i> Home</a>
-  <a class="nav-link links " href="/foods"><i class="icon ion-ios-nutrition"></i> Food</a>
+  <div class="navig">
+  <nav class="nav" >
+  <a class="nav-link links " href="/home"><i class="icon ion-ios-home"></i> Home</a>&nbsp;&nbsp;
+  <a class="nav-link links " href="/foods"><i class="icon ion-ios-nutrition"></i> Food</a>&nbsp;&nbsp;
   {{!-- <a class="nav-link links" href="/exercise"><i class="icon ion-ios-bicycle"></i> Exercise Chart</a> --}}
-  <a class="nav-link links " href="/home/editProfile"><i class="icon ion-ios-settings"></i> My Profile</a>
-  <a class="nav-link links" href="/logout">Logout</a>
-</nav>
+  <a class="nav-link links " href="/editProfile"><i class="icon ion-ios-settings"></i> My Profile</a>&nbsp;&nbsp;
+  <a class="nav-link links" href="/logout">Logout</a>&nbsp;&nbsp;
+</nav></div>
 </nav>
 {{!-- Header End --}}
     {{{body}}}
 {{!-- Footer start --}}
-<footer class="page-footer font-small mdb-color darken-3 pt-4 bg-dark">
+<footer class="page-footer font-small mdb-color darken-3 pt-4 foot">
   <div class="container">
     <div class="row ">
-      <div class="col-3 text-secondary"><h6>About Us</h6> <hr>
+      <div class="col-3 text-secondary"><h6>About Us</h6> <hr style="background-color: tomato">
             Developers: <ul><li><a href="http://www.linkedin.com/in/sudhirkr23">Sudhir Kumar</a></li><li><a href="http://www.linkedin.com/in/sankalp-ambulkar-105301b0">Sankalp Ambulkar</a></li><li>Bhakti Tandel</li><li><a href="http://www.linkedin.com/in/vipul-babhare-1b09a6135">Vipul Babhare</a></li></ul>
       </div>
       <div class="col-6">
@@ -46,14 +47,14 @@
             allowfullscreen></iframe>
         </div>      </div>
 
-        <div class="col-3 text-secondary"><h6>Contact Us</h6><hr>
+        <div class="col-3 text-secondary"><h6>Contact Us</h6><hr style="background-color: tomato">
         <a href="mailto:sudhir.kr23.1995@gmail.com?Subject=Hello%20again" target="_top">
           <i class="icon ion-md-mail"></i>&nbsp;E-mail</a>
         </div>
     </div>
   </div>
   <div class="footer-copyright text-center text-secondary py-3">&copy;2019 Copyright:
-    <a href="/home"> Calorify.Me!</a>
+    <a href="/home" class="text-warning"> Calorify.Me!</a>
   </div>
 </footer>
 {{!-- Footer end --}}

@@ -102,7 +102,7 @@ app.post('/editName',function(req,res){
   db.collection('users').updateOne({"email":req.session.user},{$set:req.body},function(error,result){
     if(error) throw error;
     if(req.session.loggedIn){
-      res.redirect('/home/editProfile');
+      res.redirect('/editProfile');
        console.log(req.body)
     }
     else res.redirect('/');
@@ -112,7 +112,7 @@ app.post('/editMail',function(req,res){
   db.collection('users').updateOne({"email":req.session.user},{$set:req.body},function(error,result){
     if(error) throw error;
     if(req.session.loggedIn){
-      res.redirect('/home/editProfile');
+      res.redirect('/editProfile');
        console.log(req.body)
     }
     else res.redirect('/');
@@ -122,7 +122,7 @@ app.post('/editDob',function(req,res){
   db.collection('users').updateOne({"email":req.session.user},{$set:req.body},function(error,result){
     if(error) throw error;
     if(req.session.loggedIn){
-      res.redirect('/home/editProfile');
+      res.redirect('/editProfile');
        console.log(req.body)
     }
     else res.redirect('/');
@@ -132,7 +132,7 @@ app.post('/editSex',function(req,res){
   db.collection('users').updateOne({"email":req.session.user},{$set:req.body},function(error,result){
     if(error) throw error;
     if(req.session.loggedIn){
-      res.redirect('/home/editProfile');
+      res.redirect('/editProfile');
        console.log(req.body)
     }
     else res.redirect('/');
@@ -142,7 +142,7 @@ app.post('/editWh',function(req,res){
   db.collection('users').updateOne({"email":req.session.user},{$set:req.body},function(error,result){
     if(error) throw error;
     if(req.session.loggedIn){
-      res.redirect('/home/editProfile');
+      res.redirect('/editProfile');
        console.log(req.body)
     }
     else res.redirect('/');
@@ -152,7 +152,7 @@ app.post('/editStatus',function(req,res){
   db.collection('users').updateOne({"email":req.session.user},{$set:req.body},function(error,result){
     if(error) throw error;
     if(req.session.loggedIn){
-      res.redirect('/home/editProfile');
+      res.redirect('/editProfile');
        console.log(req.body)
     }
     else res.redirect('/');
@@ -207,7 +207,7 @@ app.put('/home/bmi/:id',function(req,res){
     })
 });
 // getting bmi report
-app.get('/home/bmiReport',function(req,res){
+app.get('/bmiReport',function(req,res){
   var user;
   db.collection('users').findOne({ "email": req.session.user },function(error,result){
     user=result;
@@ -252,7 +252,7 @@ app.get('/home/bmiReport',function(req,res){
 })
 })
 // edit profile route
-app.get('/home/editProfile',function(req,res){
+app.get('/editProfile',function(req,res){
   var user;
   db.collection('users').findOne({ "email": req.session.user },function(error,result){
     user=result;
