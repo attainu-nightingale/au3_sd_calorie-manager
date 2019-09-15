@@ -34,7 +34,7 @@
 <div class="body">
 <div class="container "> 
     <div class="row">
-        <div class="col-6  rounded  cal">
+        <div class="col -sm-6  rounded  cal">
             <img class="rounded-circle ml-4 profile-pic" src={{data.profilePic}} width="150px" height="150px" class="d-inline-block align-bottom "/>                      <button class="btn btn-transparent" id="img" data-toggle="tooltip" title="Edit Profile Pic"><i class="icon ion-md-create"></i></button>&nbsp;<button class="btn btn-transparent" id="cimage"><i class="icon ion-md-close"></i></button>
 <br>
             <div id="image">
@@ -49,11 +49,11 @@
             <div class="userName">{{data.fname}}&nbsp;{{data.lname}}</div>
           <div  class="bmi"> <form>
              <div class="row font-weight-bold">
-                  <div class="col">
+                  <div class="col-sm">
                       <label for="weight">Weight in kgs</label>
                       <input type="number" class="form-control" placeholder="Weight(kg)" id="weight" name="weight" required value={{data.weight}} style="border:1px solid green">
                   </div>
-                  <div class="col">
+                  <div class="col-sm">
                                             <label for="height">Height in mts</label>
                       <input type="number" class="form-control" placeholder="Height(mts)"  id="height" name="height" required value={{data.height}} style="border:1px solid green">
                   </div>
@@ -66,6 +66,7 @@
             <button class="btn text-light btns float-right" type="button" value={{data._id}} id="report" disabled>View Full Report</button>
             </form> </div> 
         </div>
+        <div class="col-sm-6"></div>
     </div>
 </div>
 </div>
