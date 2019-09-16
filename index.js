@@ -1,6 +1,8 @@
 var express = require("express");
 var app = express();
 var bodyParser = require("body-parser");
+const bcrypt = require('bcrypt');
+const saltRounds = 10;
 var hbs=require('hbs');
 var multer=require("multer");
 var upload=multer({dest:'public/profilePic'});
@@ -67,34 +69,44 @@ else{
 //login authorization
 app.post('/auth', (req, res) => {
   var flag=false;
-      db.collection('users').find({$and:[{email:req.body.email,password:req.body.password}]}).toArray(function(error,result){
-          if(error) throw error;
-      for (let i = 0; i < result.length; i++) {
-      if(result[i].email==req.body.email && result[i].password==req.body.password){
-              flag=true;
+      db.collection('users').findOne({email:req.body.email},function(error,result){
+      if(error) throw error;
+      bcrypt.compare(req.body.password,result.password,function(error,auth){
+        if(auth)
+        {
+          flag=true;
               console.log(req.body)
-              req.session.user=result[i].email;
-              break;
-          }
-      }
-      if(flag){
-          req.session.loggedIn=true;
-          res.redirect("/home")
-          console.log('logged in')
-         }
-      else
-      res.render("invalidLogin.hbs",{
-        layout: false,
-        title:"Invalid Login"
-      });
+              req.session.user=result.email;
+        }
+        
+          if(flag){
+            req.session.loggedIn=true;
+            res.redirect("/home")
+            console.log('logged in')
+           }
+        else
+        res.render("invalidLogin.hbs",{
+          layout: false,
+          title:"Invalid Login"
+        })
+      })
 
-  });
+    })
 });
 //posting signup data to database
-app.post("/signup", function(req, res) {
-  db.collection("users").insertOne(req.body);
-  console.log("inserted");
-  res.redirect('/');
+app.post("/signup", function(req, res, next) {
+  var pass="";
+  bcrypt.genSalt(saltRounds,function(error,salt){
+    bcrypt.hash(req.body.password,salt,function(error,hash){
+      pass=hash;
+      var update=req.body;
+      update.password=hash;
+      db.collection("users").insertOne(update);
+      console.log("inserted");
+      res.redirect('/');
+    
+    })
+  })
 });
 // profile editing route
 /////////////////////////////////////////////////////////////////////////////////////
