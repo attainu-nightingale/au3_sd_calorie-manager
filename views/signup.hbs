@@ -16,11 +16,11 @@
     </head>
     <body>
       
-   <div class="container mt-5">
+   <div class="container mt-5 ">
      <form  action="/signup" onsubmit="validateForm()"  method="POST" autocomplete="on">
                    <div class="row">
-                    <div class="col-2"></div>
-                    <div class="col-8">
+                    {{!-- <div class="col-2"></div> --}}
+                    <div class="col-sm" id="sign">
                         <div class="d-flex justify-content-center ">
                             
 
@@ -28,11 +28,11 @@
                         </div>
                         <br>
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-sm" id="left">
                      
                              
                             <label class="label control-label">First Name&nbsp;<i class="icon ion-md-person"></i></label>
-                            <input type="text" class="form-control" name="fname" placeholder="First Name*" required>
+                            <input type="text" class="form-control" name="fname" placeholder="First Name*" autofocus required>
                             <label class="label control-label">E-mail&nbsp;<i class="icon ion-md-mail"></i></label>
                             <input type="email" class="form-control" name="email" placeholder="Email*" required>
                             <p>Please select your gender*:
@@ -47,7 +47,7 @@
                             
                           </div>
                          
-                        <div class="col-6">
+                        <div class="col-sm" id="right">
                         
                             <label class="label control-label">Last Name&nbsp;<i class="icon ion-md-person"></i></label>
                             <input type="text" class="form-control" name="lname" placeholder="Last Name*" required>
@@ -68,7 +68,7 @@
                    <div class="d-flex justify-content-center"><button type="submit" class="btn btn-lg btns " onclick="alt()">Register</button></div> 
                    <span class="text-light d-flex justify-content-center">Already have an account&nbsp;<a class="text-warning" href="/">Login</a></span>
                     </div>
-                    <div  class="col-2"></div>
+                    {{!-- <div  class="col-2"></div> --}}
                   </div>
                   </form>
                     </div>

@@ -1,7 +1,5 @@
 *{
     box-sizing:  border-box;
-    margin: 0%;
-    padding: 0%;
   }
   body {
       background-image: url("https://images.unsplash.com/photo-1496412705862-e0088f16f791?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
@@ -13,11 +11,12 @@
       font-family: "Comic Sans MS", cursive, sans-serif;
 
     }
-  .col-8{
+  #sign{
     background: rgba(0,0,0,0.7);
-    /* box-shadow: -1px 1px 50px 10px black ; */
+    margin-left: 15%;
+    margin-right: 15%;
     border-radius: 20px;
-    padding: 10px;
+    padding: 20px;
   }
   .sex{
     border: 1px solid black;
@@ -81,5 +80,21 @@
     font-weight:  bold;
     color: rgb(152, 21, 55);
     box-shadow: 2px 2px 5px rgb(152, 21, 55);
+}
+@media(max-width: 700px){
+  body{
+    line-height: inherit;
+    font-size: inherit;
+
+  }
+  .form-control{
+    width: 100%;
+  }
+  #sign{
+    margin: 0%;
+  }
+ .mt-5{
+    margin-top: 0%;
+  }
 }
   

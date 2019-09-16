@@ -1,7 +1,7 @@
 <div class="body">
 <div class="container "> 
     <div class="row">
-        <div class="col-6  rounded  cal">
+        <div class="col-sm-6  rounded  cal">
             <img class="rounded-circle ml-4 profile-pic" src={{data.profilePic}} width="150px" height="150px">
             <div class="userName">{{data.fname}}&nbsp;{{data.lname}}</div>
             <div class="card text-dark  mb-3 " style="max-width: 25rem;">
@@ -23,7 +23,7 @@
 <div class="container-fluid" id="healthy">
     <div class="container">
         <div class="row">
-            <div class="col-6 md-5 p-3">
+            <div class="col-sm-6 md-5 p-3">
                 <div><b>Oh! You are Underweight</b><hr style="background-color: rgb(152, 21, 55);"></div>
                 <p>Your BMI is below <b class="text-danger">18.5</b> which  indicates that you are underweight, so you may need to put on some weight. You are recommended to ask your doctor or a dietitian for advice.</p>
                                 <div class="container"  >
@@ -67,7 +67,7 @@
 
 
             </div>
-             <div class="col-6 md-5 p-3">
+             <div class="col-sm-6 md-5 p-3">
                  <div><b>BMI Categories based on WHO Data</b><hr style="background-color: rgb(152, 21, 55);"></div>
                  <p>The dashed lines represent subdivisions within a major categorization.</p>
                  <img class="p-2 chart" src="https://d26tpo4cm8sb6k.cloudfront.net/img/bmi-chart.gif" alt="" width="100%"/>
@@ -86,8 +86,8 @@
                 <p class="ml-3  p-2">Your BMR is the amount of energy you expend each day when at rest.  This Calculator allows you to calculate not only the number of calories you burn when inactive, but also a daily calorie figure that takes into account your lifestyle activity level. </p>
 
         <div class="row">
-            <div class="col-2"></div>
-            <div class="col-8 md-5 p-3" >
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8 md-5 p-3" >
                 <div class="container">
                     <p class="text-center"> <b>BMR Calculation</b><hr></p>
                     <form class="calories" id="calBmr" autocomplete="on">
@@ -96,7 +96,7 @@
                          <input type="number" class="form-control form-control-sm" id="weight" value={{data.weight}} readonly>
                         </div>
                         <div class="form-group">
-                         <label for="height">Height in cm:</label>
+                         <label for="height">Height in m:</label>
                          <input type="number" class="form-control form-control-sm" id="height" value={{data.height}} readonly>
                         </div>
                         <div class="form-group">
@@ -130,7 +130,7 @@
 
                 </div>
             </div>
-            <div class="col-2"></div>
+            <div class="col-sm-2"></div>
         </div>
 
     </div>

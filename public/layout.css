@@ -36,7 +36,7 @@ color: rgb(135, 156, 42);
     /* font-weight:  bold; */
 }
 .navig{
-    background: linear-gradient(90deg,rgb(97, 94, 94),black);
+    background: linear-gradient(90deg,rgb(68, 67, 67),black);
     border-left: 1px solid black;
     border-radius: 35px;
     padding: 5px,15px,5px,15px;
@@ -60,11 +60,11 @@ p{
     line-height: 1.5rem;
 }
 @media(max-width: 600px){
-    p{
-        font-size: .90rem;
-        line-height: inherit;
-    }
-    
+body{
+    font-size: inherit;
+    line-height: inherit;
+}   
+
     
 }
 

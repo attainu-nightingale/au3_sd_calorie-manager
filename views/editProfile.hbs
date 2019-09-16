@@ -1,8 +1,8 @@
 <div class="body">
 <div class="container "> 
     <div class="row">
-        <div class="col-6  rounded  cal">
-            <img class="rounded-circle ml-4 profile-pic" src={{data.profilePic}} width="350px" height="350px">
+        <div class="col-sm-6  rounded  cal">
+            <img class="rounded-circle profile-pic" src={{data.profilePic}} width="350px" height="350px">
             <div class="userName name">{{data.fname}}&nbsp;{{data.lname}}</div>
                         <div class="card-footer rounded font-weight-bold border-dark h4 text-capitalize"><i class="icon ion-md-megaphone"></i>&nbsp;{{data.status}}</div>
 
@@ -19,10 +19,10 @@
         <div id="name" class="ml-4 mr-4">
             <form action="/editName" method="POST">
         <div class="row">
-                <div class="col">
+                <div class="col-sm">
                    <input type="text" class="form-control" placeholder="First name" name="fname" required style="border:1px solid green">
            </div>
-              <div class="col">
+              <div class="col-sm">
                 <input type="text" class="form-control" placeholder="Last name" name="lname" required style="border:1px solid green">
           </div>
           <button type="submit" class="btn btns text-light">Update</button>
@@ -34,7 +34,7 @@
         <div id="mail" class="ml-4 mr-4">
             <form action="/editMail" method="POST">
         <div class="row">
-                <div class="col">
+                <div class="col-sm">
                    <input type="email" class="form-control" placeholder="E-mail" name="email" required style="border:1px solid green">
            </div>
           <button type="submit" class="btn btns text-light">Update</button>
@@ -46,7 +46,7 @@
         <div id="dob" class="ml-4 mr-4">
             <form action="/editDob" method="POST">
         <div class="row">
-                <div class="col">
+                <div class="col-sm">
                    <input type="date" class="form-control"  name="dob" required style="border:1px solid green">
            </div>
           <button type="submit" class="btn btns text-light">Update</button>
@@ -58,7 +58,7 @@
         <div id="gender" class="ml-4 mr-4">
             <form action="/editSex" method="POST">
         <div class="row">
-                <div class="col">
+                <div class="col-sm">
                     <input type="radio" name="gender" value="male" required> Male<br>  
                     <input type="radio" name="gender" value="female" required> Female<br>
            </div>
@@ -72,10 +72,10 @@
         <div id="wh" class="ml-4 mr-4">
             <form action="/editWh" method="POST">
         <div class="row">
-                <div class="col">
+                <div class="col-sm">
                    <input type="number" class="form-control" placeholder="Weight(kg)"  data-unit-system="kg"  name="weight" required style="border:1px solid green">
            </div>
-              <div class="col">
+              <div class="col-sm">
                 <input type="number" class="form-control" placeholder="Height" step="0.01" min="0" max="10" data-unit-system="m" name="Height" required style="border:1px solid green">
           </div>
           <button type="submit" class="btn btns text-light">Update</button>
@@ -87,7 +87,7 @@
         <div id="status" class="ml-4 mr-4">
             <form action="/editStatus" method="POST">
         <div class="row">
-                <div class="col">
+                <div class="col-sm">
                     <textarea class="form-control" rows="3" id="comment" placeholder="What's your status!" name="status" style="border:1px solid green"></textarea>
            </div>
           <button type="submit" class="btn btns text-light" style="max-height: 40px;">Update</button>

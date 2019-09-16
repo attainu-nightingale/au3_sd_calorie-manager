@@ -49,10 +49,6 @@ label{
     box-shadow: 0 4px 8px 0 rgba(152, 21, 55, 0.5), 0 6px 20px 0 rgba(152, 21, 55, 0.19);
 
 }
-[class*="col-"] {
-    float: left;
-    padding: 15px;
-  }
 .userName{
     margin-left: 30px;
     padding: 10px 20px;
@@ -70,23 +66,8 @@ label{
     padding: 10px 20px;
     border-radius: 30px;
 }
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
 .profile-pic{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background: url(https://sytecg.com/wp-content/uploads/2018/07/85622928-default-avatar-profile-icon-grey-photo-placeholder-illustrations-vectors.jpg) no-repeat scroll 0 0;
-  background-repeat:  no-repeat;
-    background-size:  cover;
 }
 .card{
     background: rgba(0, 0, 0, 0.2);
@@ -188,10 +169,13 @@ h4{
 }
 
 @media(max-width:600px){
-    /* .form-control{
-        width: 100%;
-    } */
-    [class*="col-"] {
-        width: 100%;
-      }
+  body{
+    font-size: inherit;
+    line-height: inherit;
+  }
+  .profile-pic{
+    width: inherit;
+    height:inherit;
+    
+  }
 }
